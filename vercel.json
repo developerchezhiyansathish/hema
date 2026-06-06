@@ -3,7 +3,6 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "nodeVersion": "18.x",
   "env": {
     "SMTP_HOST": "@smtp_host",
     "SMTP_PORT": "@smtp_port",
