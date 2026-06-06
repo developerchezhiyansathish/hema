@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   IVORY MAISON — Design System
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme inline {
+  --font-serif: "Georgia", "Times New Roman", serif;
+  --font-label: "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Avenir Next", "Helvetica Neue", sans-serif;
+
+  /* ── Design Token Colors ── */
+  --color-surface: #fff8f1;
+  --color-surface-dim: #dfd9d2;
+  --color-surface-bright: #fff8f1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9f3eb;
+  --color-surface-container: #f3ede6;
+  --color-surface-container-high: #ede7e0;
+  --color-surface-container-highest: #e8e1db;
+  --color-on-surface: #1d1b17;
+  --color-on-surface-variant: #4d4637;
+  --color-inverse-surface: #33302c;
+  --color-inverse-on-surface: #f6f0e9;
+  --color-outline: #7f7665;
+  --color-outline-variant: #d0c5b2;
+  --color-surface-tint: #765a00;
+  --color-primary: #765a00;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #b8963e;
+  --color-on-primary-container: #403000;
+  --color-inverse-primary: #e8c265;
+  --color-secondary: #755a16;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fed888;
+  --color-on-secondary-container: #785d19;
+  --color-tertiary: #5d5f5d;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #999a98;
+  --color-on-tertiary-container: #303231;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdf96;
+  --color-primary-fixed-dim: #e8c265;
+  --color-on-primary-fixed: #251a00;
+  --color-on-primary-fixed-variant: #594400;
+  --color-secondary-fixed: #ffdf9d;
+  --color-secondary-fixed-dim: #e6c274;
+  --color-on-secondary-fixed: #251a00;
+  --color-on-secondary-fixed-variant: #5b4300;
+  --color-tertiary-fixed: #e2e3e1;
+  --color-tertiary-fixed-dim: #c6c7c5;
+  --color-on-tertiary-fixed: #1a1c1b;
+  --color-on-tertiary-fixed-variant: #454746;
+  --color-background: #fff8f1;
+  --color-on-background: #1d1b17;
+  --color-surface-variant: #e8e1db;
+
+  /* ── Semantic Aliases ── */
+  --color-ivory: #fafaf8;
+  --color-pure-ivory: #fafaf8;
+  --color-linen: #f4f2ee;
+  --color-soft-linen: #f3ede6;
+  --color-fine-stone: #e2ded7;
+  --color-champagne-gold: #b8963e;
+  --color-deep-gold: #765a00;
+  --color-ink: #1d1b17;
+  --color-dark-bg: #1a1814;
+  --color-gold-rule: rgba(184, 150, 62, 0.35);
+
+  /* ── Custom Spacing ── */
+  --spacing-section-gap: 160px;
+  --spacing-element-gap: 24px;
+  --spacing-margin-edge: 80px;
+
+  /* ── Font families for Tailwind ── */
+  --font-hero-display: var(--font-serif);
+  --font-section-title: var(--font-serif);
+  --font-navigation-label: var(--font-label);
+  --font-body-main: var(--font-body);
+  --font-body-caption: var(--font-body);
+
+  /* ── Font sizes ── */
+  --text-hero-display: 92px;
+  --text-hero-display--line-height: 1.1;
+  --text-hero-display--letter-spacing: -0.02em;
+  --text-hero-display--font-weight: 400;
+
+  --text-section-title: 48px;
+  --text-section-title--line-height: 1.2;
+  --text-section-title--letter-spacing: 0.05em;
+  --text-section-title--font-weight: 700;
+
+  --text-navigation-label: 12px;
+  --text-navigation-label--line-height: 1.0;
+  --text-navigation-label--letter-spacing: 0.45em;
+  --text-navigation-label--font-weight: 500;
+
+  --text-body-main: 16px;
+  --text-body-main--line-height: 1.9;
+  --text-body-main--letter-spacing: 0.01em;
+  --text-body-main--font-weight: 300;
+
+  --text-body-caption: 14px;
+  --text-body-caption--line-height: 1.6;
+  --text-body-caption--letter-spacing: 0.02em;
+  --text-body-caption--font-weight: 400;
+
+  /* ── Border radius override (sharp edges) ── */
+  --radius: 0px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BASE LAYER
+   ═══════════════════════════════════════════════════════════════ */
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-body), "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-container);
+    color: white;
+  }
+
+  /* Ensure all inputs have sharp corners */
+  input, textarea, button, select {
+    border-radius: 0;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   COMPONENT LAYER
+   ═══════════════════════════════════════════════════════════════ */
+
+@layer components {
+  /* ── Gold decorative ruler ── */
+  .gold-ruler {
+    height: 1px;
+    background: var(--color-gold-rule);
+  }
+
+  .gold-ruler-solid {
+    height: 1px;
+    background: var(--color-champagne-gold);
+  }
+
+  /* ── Fine stone border ── */
+  .fine-stone-border {
+    border: 1px solid var(--color-fine-stone);
+  }
+
+  /* ── Corner bracket decorations ── */
+  .corner-bracket {
+    width: 16px;
+    height: 16px;
+    border-color: var(--color-champagne-gold);
+    border-width: 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  /* ── Scroll indicator pulse ── */
+  @keyframes gentle-pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  .animate-gentle-pulse {
+    animation: gentle-pulse 2s ease-in-out infinite;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE OVERRIDES
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1200px) {
+  :root {
+    --text-hero-display: 72px;
+    --text-section-title: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-hero-display: 60px;
+    --text-section-title: 32px;
+    --text-navigation-label--line-height: 1.35;
+    --text-navigation-label--letter-spacing: 0.30em;
+  }
+
+  .font-section-title.text-section-title {
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    line-height: 1.28 !important;
+    letter-spacing: 0.02em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-hero-display: 60px;
+    --text-section-title: 28px;
+    --text-navigation-label: 11px;
+    --text-navigation-label--line-height: 1.35;
+    --text-navigation-label--letter-spacing: 0.28em;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --text-hero-display: 28px;
+    --text-section-title: 24px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LENIS SMOOTH SCROLL
+   ═══════════════════════════════════════════════════════════════ */
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
