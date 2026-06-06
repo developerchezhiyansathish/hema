@@ -157,7 +157,7 @@ export const caseStudies: PortfolioCaseStudy[] = [
     detail:
       "The RmKV work blends campaign planning, shoot coordination, content calendars, influencer amplification, and culturally rooted creative direction. Each campaign was shaped to make product stories feel premium, seasonal, and easy to remember across social placements.",
     outcome: "10X engagement lift, 22 shoots managed, 3 global features",
-    image: "/images/RmKV/RmKV-img-two.png",
+    image: "/images/RMKV/rmkv-img-two.png",
     highlights: [
       "10X engagement growth",
       "22 digital and print shoots",
@@ -166,12 +166,12 @@ export const caseStudies: PortfolioCaseStudy[] = [
     ],
     gallery: [
       {
-        src: "/images/RmKV/RmKV-img-two.png",
+        src: "/images/RMKV/rmkv-img-two.png",
         alt: "RmKV campaign creative",
         caption: "Campaign-led fashion imagery for RmKV.",
       },
       {
-        src: "/images/RmKV/RmKV-img-one.jpg",
+        src: "/images/RMKV/rmkv-img-one.jpg",
         alt: "RmKV brand campaign",
         caption: "Social-first visual direction and retail storytelling.",
       },
@@ -182,12 +182,12 @@ export const caseStudies: PortfolioCaseStudy[] = [
       },
     ],
     videos: [
-      { src: "/images/RmKV/RmKV-video-one.mp4", caption: "RmKV campaign reel" },
-      { src: "/images/RmKV/RmKV-video-two.mp4", caption: "Collection storytelling reel" },
-      { src: "/images/RmKV/RmKV-video-three.mp4", caption: "Product-led festive reel" },
-      { src: "/images/RmKV/RmKV-video-four.mp4", caption: "Social media campaign video" },
-      { src: "/images/RmKV/RmKV-video-five.mp4", caption: "Fashion retail motion asset" },
-      { src: "/images/RmKV/RmKV-video-six.mp4", caption: "Campaign content cutdown" },
+      { src: "/images/RMKV/rmkv-video-one.mp4", caption: "RmKV campaign reel" },
+      { src: "/images/RMKV/rmkv-video-two.mp4", caption: "Collection storytelling reel" },
+      { src: "/images/RMKV/rmkv-video-three.mp4", caption: "Product-led festive reel" },
+      { src: "/images/RMKV/rmkv-video-four.mp4", caption: "Social media campaign video" },
+      { src: "/images/RMKV/rmkv-video-five.mp4", caption: "Fashion retail motion asset" },
+      { src: "/images/RMKV/rmkv-video-six.mp4", caption: "Campaign content cutdown" },
     ],
     projects: [
       {
@@ -390,11 +390,6 @@ export const caseStudies: PortfolioCaseStudy[] = [
         src: "/images/Vairam/vairam-one.jpg",
         alt: "Vairam jewelry visual",
         caption: "Minimal jewelry creative with premium retail tone.",
-      },
-      {
-        src: "/images/portfolio-fragrance.png",
-        alt: "Luxury styling reference",
-        caption: "Premium product styling language for detail-led visuals.",
       },
     ],
     videos: [
