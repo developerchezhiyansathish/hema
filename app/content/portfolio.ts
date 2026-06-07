@@ -11,7 +11,7 @@ export const profile = {
   intro:
     "A social media strategist with over four years of experience across fashion, jewelry, and food brands. Her work blends content creation, client management, and campaign optimization with a sharp eye for visual storytelling.",
   about:
-    "Hemapriya has led social media strategies that drove a 10X increase in engagement and a 50% lift in website traffic, while shaping campaign narratives that move cleanly from product focus to brand recall.",
+    "I have led social media strategies that drove a 10X increase in engagement and a 50% lift in website traffic, while shaping campaign narratives that move cleanly from product focus to brand recall.",
 };
 
 export const profileHighlights = [
